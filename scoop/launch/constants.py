@@ -24,15 +24,9 @@
 # -oServerAliveInterval=300 : Send sign of life every 5 minutes to prevent
 #                             the server to close the connection.
 BASE_SSH = [
-    '{{ssh_executable}}',
-    '-tt',
-    '-x',
-    '-oStrictHostKeyChecking=no',
-    '-oBatchMode=yes',
-    '-oUserKnownHostsFile=/dev/null',
-    '-oServerAliveInterval=300',
+    'pbs_tmrsh',
 ]
 
 BASE_RSH = [
-    'pbs_tmrsh',
+    'rsh',
 ]
