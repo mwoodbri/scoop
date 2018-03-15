@@ -108,7 +108,7 @@ class remoteBroker(object):
         self.hostname = hostname
 
         BASE_SSH[0] = ssh_executable
-        cmd = BASE_RSH if rsh else BASE_SSH + [
+        cmd = (BASE_RSH if rsh else BASE_SSH) + [
             hostname,
             brokerString.format(pythonExec=pythonExecutable)
         ]
