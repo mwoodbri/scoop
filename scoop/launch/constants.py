@@ -34,5 +34,5 @@ BASE_SSH = [
 ]
 
 BASE_RSH = [
-    'rsh',
+    'pbs_tmrsh',
 ]
